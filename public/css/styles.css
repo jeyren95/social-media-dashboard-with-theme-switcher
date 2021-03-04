@@ -40,6 +40,27 @@ p {
   }
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+  header {
+    padding: 4% 8% 8%;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .container-fluid {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    padding: 4% 10% 8%;
+  }
+  .container-fluid {
+    padding: 0 10%;
+  }
+}
+
 /*** Cards ***/
 .card {
   padding: 4% 5%;
@@ -85,7 +106,26 @@ p {
     height: 8px;
   }
   .toggle-theme .fas {
-    margin-top: -15%;
+    margin-top: -18%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .toggle-theme {
+    width: 90%;
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .toggle-theme {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .toggle-theme {
+    width: 45%;
   }
 }
 
@@ -121,6 +161,10 @@ p {
 }
 
 /*** Statistics section ***/
+#daily-social-media-stats .container-fluid {
+  margin-bottom: 3%;
+}
+
 #daily-social-media-stats .heading {
   margin-bottom: 3%;
   color: 	#63687e;

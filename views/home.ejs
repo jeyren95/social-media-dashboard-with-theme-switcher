@@ -3,14 +3,14 @@
 <body>
   <header>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-sm-8">
         <div class="social-media-dashboard">
           <h2>Social Media Dashboard</h2>
           <p>Total Followers: 23,004</p>
           <hr>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-sm-4">
         <div class="toggle-theme">
           <p>Dark Mode</p>
           <button type="button" value="light-mode"><i class="fas fa-circle"></i></button>
@@ -23,7 +23,7 @@
     <div class="container-fluid">
       <div class="row">
         <% accounts.forEach((account) => { %>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card" style="border-color: <%=account.cardColor %>">
               <div class="card-body">
                 <div class="account-name">
@@ -53,7 +53,7 @@
         </div>
         <div class="row">
           <% stats.forEach((stat) => { %>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
               <div class="card">
                 <div class="card-body">
                   <div class="stat-name">
