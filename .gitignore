@@ -4,6 +4,10 @@
 ###############################################
 *.sketch
 
+
+# dependencies
+/node_modules
+
+
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
-/node_modules
