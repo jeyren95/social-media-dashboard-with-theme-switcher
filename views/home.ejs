@@ -1,0 +1,92 @@
+<%- include("partials/header") -%>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="social-media-dashboard">
+          <h2>Social Media Dashboard</h2>
+          <p>Total Followers: 23,004</p>
+          <hr>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="toggle-theme">
+          <p>Dark Mode</p>
+          <button type="button" value="light-mode"><i class="fas fa-circle"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="social-media-follower-count">
+    <div class="container-fluid">
+      <div class="row">
+        <% accounts.forEach((account) => { %>
+          <div class="col-lg-3">
+            <div class="card" style="border-color: <%=account.cardColor %>">
+              <div class="card-body">
+                <div class="account-name">
+                  <img class="social-media-icon" src=<%=account.socialMediaIcon %> alt="social-media-icon">
+                  <span><%=account.name %></span>
+                </div>
+                <div class="follower-count">
+                  <h1><%=account.count %></h1>
+                  <p><%=account.follower %></p>
+                </div>
+                <div class="stat-change">
+                  <img src=<%=account.changeIcon %> alt="up-down-icon">
+                  <span style="color: <%=account.iconColor %>"><%=account.countChange %> Today</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+        </div>
+      </div>
+    </section>
+
+    <section id="daily-social-media-stats">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2>Overview - Today</h2>
+        </div>
+        <div class="row">
+          <% stats.forEach((stat) => { %>
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="stat-name">
+                    <span><%=stat.statName %></span>
+                    <img class="social-media-icon" src=<%=stat.socialMediaIcon %> alt="social-media-icon">
+                  </div>
+                  <div class="stat-numbers">
+                    <div class="raw-numbers">
+                      <h2><%=stat.count %></h2>
+                    </div>
+                    <div class="percentage-change">
+                      <img src=<%=stat.changeIcon %> alt="up-down-icon">
+                      <span style="color: <%=stat.iconColor %>"><%=stat.percentChange %></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% }); %>
+          </div>
+        </div>
+      </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+  </body>
+
+  </html>

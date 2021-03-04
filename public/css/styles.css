@@ -1,0 +1,148 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+header {
+  background-color: #f5f7ff;
+  padding: 4% 18% 8%;
+}
+
+hr {
+  display: none;
+}
+
+h1, h2 {
+  color: #1e202a;
+  font-weight: bold;
+}
+
+p {
+  color: 	#63687e;
+}
+
+/*** Containers ***/
+.container-fluid {
+  padding: 0 18%;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10% 5% 15%;
+  }
+  hr {
+    display: block;
+    border: solid thin #63687e;
+    margin-top: 10%;
+  }
+  .container-fluid {
+    padding: 0 8%;
+  }
+}
+
+/*** Cards ***/
+.card {
+  padding: 4% 5%;
+  background-color: #f0f2fa;
+  border-style: none;
+  margin-bottom: 10%;
+}
+
+/*** Header section ***/
+.toggle-theme {
+  float: right;
+  width: 30%;
+  margin-top: 5%;
+}
+
+.toggle-theme p, .toggle-theme button {
+  display: inline-block;
+}
+
+.toggle-theme button {
+  background-color: #aeb3cb;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  width: 30%;
+  padding: 3% 0;
+  margin-left: 5%;
+}
+
+.toggle-theme .fas {
+  color: white;
+  float: right;
+  margin-right: 5%;
+}
+
+@media (max-width: 480px) {
+  .toggle-theme {
+    width: 100%;
+  }
+  .toggle-theme button {
+    float: right;
+    width: 12%;
+    height: 8px;
+  }
+  .toggle-theme .fas {
+    margin-top: -15%;
+  }
+}
+
+/*** Social media follower count section ***/
+#social-media-follower-count .container-fluid {
+  margin-bottom: 2%;
+  margin-top: -5%;
+}
+
+#social-media-follower-count .card {
+  text-align: center;
+  border-top: solid thick;
+}
+
+#social-media-follower-count .account-name, #social-media-follower-count .follower-count {
+  margin-bottom: 10%;
+}
+
+.account-name img {
+  margin-right: 2%;
+}
+
+.account-name span {
+  color: 	#63687e;
+}
+
+.follower-count h1 {
+  font-size: 55px;
+}
+
+.follower-count p {
+  letter-spacing: 4px;
+}
+
+/*** Statistics section ***/
+#daily-social-media-stats .heading {
+  margin-bottom: 3%;
+  color: 	#63687e;
+  border: solid transparent;
+}
+
+.stat-name {
+  margin-bottom: 10%;
+}
+
+.stat-name span {
+  color: #63687e;
+}
+
+.stat-name img, .percentage-change {
+  float: right;
+}
+
+.raw-numbers, .percentage-change {
+  display: inline-block;
+}
+
+.percentage-change {
+  padding-top: 5%;
+}
